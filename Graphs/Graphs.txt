@@ -1,0 +1,121 @@
+Graph Data Structure is a non-linear data structure consisting of vertices and edges. It is useful in fields such as social network analysis, recommendation systems, and computer networks. In the field of sports data science, graph data structure can be used to analyze and understand the dynamics of team performance and player interactions on the field.
+
+
+vertices( V ) and a set of edges( E ) The graph is denoted by G(V, E).
+
+
+
+
+
+DIFFERENT TYPE OF GRAPHS
+--------------------------
+
+Graph Data Structure can be classified into various types based on properties such as directionality of edges (directed or undirected), presence of cycles (acyclic or cyclic), and whether multiple edges between the same pair of vertices are allowed (simple or multigraph).
+
+
+SUBGRAPHS
+---------
+A spanning tree of a graph is a subgraph that is a tree and includes all the vertices of the original graph. A minimum spanning tree (MST) is a spanning tree with the minimum possible sum of edge weights.
+
+
+ALGORITHMS
+---------
+
+Common graph traversal algorithms include depth-first search (DFS) and breadth-first search (BFS). These algorithms are used to explore or visit all vertices in a graph, typically starting from a specified vertex. Other algorithms, such as Dijkstra’s algorithm and Bellman-Ford algorithm, are used for shortest path finding.
+
+
+
+
+
+
+
+
+IMPLEMENTATION
+--------------
+
+1) ADJACENCY MATRIX
+Adjacency matrix representation is commonly used in graph theory to represent the relationships between nodes (vertices) in a graph. Here's how it can be practically applied in real-world scenarios:
+
+1. Network Routing and Communication
+In computer networks, nodes represent routers or devices, and edges represent communication links. An adjacency matrix can be used to represent this network topology. This helps in determining the optimal routing paths, detecting loops, and managing network traffic.
+2. Social Networks
+In a social network, each vertex can represent a user, and edges can represent friendships or connections. The adjacency matrix can show who is connected to whom. This is useful for analyzing relationships, detecting communities, and understanding network structure.
+3. Flight Maps and City Roads
+Airlines and road networks can use adjacency matrices where cities are represented as vertices, and direct flights or roads between cities are represented as edges. It helps in finding the shortest paths, analyzing connectivity, and optimizing routes.
+4. Game Development
+In certain video games, graphs are used to represent game maps where nodes represent locations or rooms, and edges represent pathways. The adjacency matrix helps in pathfinding algorithms (like A*), ensuring non-overlapping paths, and detecting accessible areas.
+5. Recommendation Systems
+Adjacency matrices are used in collaborative filtering algorithms for recommendation engines (e.g., Netflix, Amazon). Users are represented as vertices, and edges represent similarities or interactions. The matrix helps in quickly identifying similar users or products.
+6. Circuit Design and Power Grids
+In electrical circuits and power grids, nodes represent components or power stations, and edges represent the connections or wires. An adjacency matrix can model the connectivity of components to manage and optimize power distribution and failure detection.
+7. Biological Network Analysis
+In bioinformatics, adjacency matrices are used to represent protein-protein interactions, neural networks, or gene regulatory networks. This helps in analyzing biological pathways and understanding complex interactions within organisms.
+Pros and Cons of Adjacency Matrix:
+Advantages:
+
+Easy to implement and understand.
+Fast access to check if two vertices are connected (O(1) time complexity).
+Disadvantages:
+
+Requires O(V²) space, which can be inefficient for large, sparse graphs where most entries in the matrix are zero (no edge).
+
+
+
+
+
+2) LIST
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BFS
+
+Time Complexity of BFS Algorithm: O(V + E)
+BFS explores all the vertices and edges in the graph. In the worst case, it visits every vertex and edge once. Therefore, the time complexity of BFS is O(V + E), where V and E are the number of vertices and edges in the given graph.
+
+Auxiliary Space of BFS Algorithm: O(V)
+BFS uses a queue to keep track of the vertices that need to be visited. In the worst case, the queue can contain all the vertices in the graph. Therefore, the space complexity of BFS is O(V).
+Applications of BFS in Graphs:
+
+
+
+
+BFS has various applications in graph theory and computer science, including:
+
+Shortest Path Finding: BFS can be used to find the shortest path between two nodes in an unweighted graph. By keeping track of the parent of each node during the traversal, the shortest path can be reconstructed.
+
+Cycle Detection: BFS can be used to detect cycles in a graph. If a node is visited twice during the traversal, it indicates the presence of a cycle.
+
+Connected Components: BFS can be used to identify connected components in a graph. Each connected component is a set of nodes that can be reached from each other.
+
+Topological Sorting: BFS can be used to perform topological sorting on a directed acyclic graph (DAG). Topological sorting arranges the nodes in a linear order such that for any edge (u, v), u appears before v in the order.
+
+Level Order Traversal of Binary Trees: BFS can be used to perform a level order traversal of a binary tree. This traversal visits all nodes at the same level before moving to the next level.
+
+Network Routing: BFS can be used to find the shortest path between two nodes in a network, making it useful for routing data packets in network protocols.

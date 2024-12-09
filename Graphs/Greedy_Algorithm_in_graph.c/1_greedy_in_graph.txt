@@ -1,0 +1,15 @@
+Greedy is an algorithmic paradigm that builds up a solution piece by piece, always choosing the next piece that offers the most obvious and immediate benefit. Greedy algorithms are used for optimization problems. 
+
+
+Some greedy algorithms in graph theory include: 
+
+Kruskal's algorithm: A well-known algorithm that finds the minimum spanning tree of a graph. 
+Dijkstra's algorithm: Finds the shortest path between any two nodes in a graph. 
+Prim's algorithm: A well-known algorithm that finds the minimum spanning tree of a weighted undirected graph. 
+Ford-Fulkerson algorithm: Finds the maximum flow in a "flow network". 
+Johnson's algorithm: Finds a feature that discerns the highest number of object pairs. 
+A greedy algorithm is a simple algorithm that makes the optimal choice at each step to find the overall optimal way to solve a problem. 
+
+
+
+Yes, topological sort is a greedy algorithm
